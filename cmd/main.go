@@ -13,7 +13,7 @@ import (
 func main() {
 	if len(os.Args) == 2 {
 
-		us, err := urls.Parse(os.Args[1])
+		us, err := urls.Parse(os.Args[1], ",")
 		if err != nil {
 			log.Fatal(err)
 		}
